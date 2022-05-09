@@ -55,7 +55,7 @@
                   <Glow />
                </effect>
                <children>
-                  <Button fx:id="exitButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exitButton" prefHeight="21.0" prefWidth="38.0" stylesheets="@..\CSS\otherStyle.css" text="X" textAlignment="CENTER">
+                  <Button fx:id="exitButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exitButton" prefHeight="21.0" prefWidth="38.0" stylesheets="@../CSS/otherStyle.css" text="X" textAlignment="CENTER">
                      <styleClass>
                         <String fx:value="exitButton" />
                         <String fx:value="button" />

@@ -80,14 +80,12 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <Button layoutX="505.0" layoutY="19.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="88.0" text="Enter" />
+                  <Button layoutX="199.0" layoutY="19.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="88.0" text="Enter" />
                   <Label layoutX="228.0" layoutY="375.0" prefHeight="37.0" prefWidth="59.0" text="Total:">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="10.0" layoutY="19.0" prefHeight="27.0" prefWidth="180.0" promptText="Enter Item" />
-                  <Button layoutX="203.0" layoutY="19.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="109.0" text="Add to Checklist" />
                   <TableView layoutX="11.0" layoutY="51.0" prefHeight="325.0" prefWidth="582.0">
                     <columns>
                       <TableColumn fx:id="productNameCol" prefWidth="186.0" text="Product Name" />
@@ -97,7 +95,7 @@
                         <TableColumn fx:id="incartCol" prefWidth="103.0" text="In Cart" />
                     </columns>
                   </TableView>
-                  <TextField layoutX="332.0" layoutY="19.0" prefHeight="27.0" prefWidth="170.0" promptText="Input Budget" />
+                  <TextField layoutX="15.0" layoutY="19.0" prefHeight="27.0" prefWidth="170.0" promptText="Input Budget" />
                   <Label layoutX="100.0" layoutY="375.0" prefHeight="37.0" prefWidth="108.0" text="\$10 000">
                      <font>
                         <Font size="20.0" />

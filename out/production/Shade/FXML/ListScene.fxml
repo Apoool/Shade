@@ -8,6 +8,8 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -78,25 +80,22 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <Button layoutX="514.0" layoutY="17.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="88.0" text="Enter" />
+                  <Button layoutX="199.0" layoutY="19.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="88.0" text="Enter" />
                   <Label layoutX="228.0" layoutY="375.0" prefHeight="37.0" prefWidth="59.0" text="Total:">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="21.0" layoutY="19.0" prefHeight="27.0" prefWidth="180.0" promptText="Enter Item" />
-                  <Button layoutX="215.0" layoutY="17.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="109.0" text="Add to Checklist" />
-                  <TableView layoutX="11.0" layoutY="51.0" prefHeight="325.0" prefWidth="694.0">
+                  <TableView layoutX="11.0" layoutY="51.0" prefHeight="325.0" prefWidth="582.0">
                     <columns>
-                        <TableColumn prefWidth="108.0" text="Serial Number" />
-                      <TableColumn prefWidth="179.0" text="Product Name" />
-                      <TableColumn prefWidth="87.0" text="Brand" />
-                        <TableColumn prefWidth="101.0" text="Cost" />
-                        <TableColumn prefWidth="123.0" text="Location" />
-                        <TableColumn prefWidth="95.0" text="In Cart" />
+                      <TableColumn fx:id="productNameCol" prefWidth="186.0" text="Product Name" />
+                      <TableColumn fx:id="brandCol" prefWidth="93.0" text="Brand" />
+                        <TableColumn fx:id="costCol" prefWidth="88.0" text="Cost" />
+                        <TableColumn fx:id="locationCol" minWidth="0.0" prefWidth="115.0" text="Location" />
+                        <TableColumn fx:id="incartCol" prefWidth="103.0" text="In Cart" />
                     </columns>
                   </TableView>
-                  <TextField layoutX="332.0" layoutY="19.0" prefHeight="27.0" prefWidth="170.0" promptText="Input Budget" />
+                  <TextField layoutX="15.0" layoutY="19.0" prefHeight="27.0" prefWidth="170.0" promptText="Input Budget" />
                   <Label layoutX="100.0" layoutY="375.0" prefHeight="37.0" prefWidth="108.0" text="\$10 000">
                      <font>
                         <Font size="20.0" />
@@ -117,6 +116,14 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="131.0" fitWidth="109.0" layoutX="602.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/sample%20Product.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="602.0" layoutY="214.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="109.0" text="Add Item" />
+                  <Button layoutX="602.0" layoutY="251.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="109.0" text="Remove Item" />
+                  <Button layoutX="602.0" layoutY="287.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="109.0" text="View Info" />
                </children>
             </Pane>
          </center>

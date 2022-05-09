@@ -4,12 +4,15 @@ package Controller;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-import Core.Checklist;
+import Core.DBConnector;
+import Core.ProductInventory;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,6 +27,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 
+
 public class ListController implements Initializable {
     
     @FXML
@@ -32,29 +36,9 @@ public class ListController implements Initializable {
     @FXML
     AnchorPane anchor;
 
-    @FXML
-    TableView<Checklist> checkListTable;
 
-    @FXML
-    TableColumn<Checklist, String> productNameCol;
-    @FXML
-    TableColumn<Checklist, String> brandCol;
-    @FXML
-    TableColumn<Checklist, Double> costCol;
-    @FXML
-    TableColumn<Checklist, String> locationCol;
-    @FXML
-    TableColumn<Checklist, Double> incartCol;
-
-    String query = null;
-    Connection connection = null;
-    PreparedStatement preparedStatement = null;
-    ResultSet rs =null;
-    Checklist checkList = null;
-    
     private Scene scene;
     private Stage stage;
- 
     
     public void switchToHome(ActionEvent event) throws IOException{
         listButton.setDisable(false);
@@ -99,6 +83,5 @@ public class ListController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
     }
 }
