@@ -1,0 +1,26 @@
+.anchor{
+    -fx-background-radius: 30 30 0 0;
+}
+.vbox{
+
+    -fx-background-color: #539987;
+    -fx-background-radius: 0 0 30 0;
+}
+.hbox{
+    -fx-background-color:  #357b69;
+    -fx-background-radius: 0 0 0 0;
+}
+.button{
+
+    -fx-background-color:  #52FFB8;
+    -fx-background-radius: 30 0 0 30;
+}
+.button:hover{
+
+    -fx-background-color:  #1bc1ac;
+}
+
+.button:disabled{
+    -fx-background-color:  #c6ffff;
+    -fx-background-radius: 30 0 0 30; 
+}
