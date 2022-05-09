@@ -7,6 +7,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -75,7 +76,7 @@
          <center>
             <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="180.0" fitWidth="410.0" layoutX="106.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="180.0" fitWidth="358.0" layoutX="26.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                      <viewport>
                         <Rectangle2D />
                      </viewport>
@@ -85,14 +86,14 @@
                   </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="211.0" prefHeight="44.0" prefWidth="105.0" text="ITEM'S NAME" textAlignment="CENTER" />
                   <Label alignment="TOP_CENTER" layoutX="31.0" layoutY="247.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="117.0" prefWidth="331.0" text="Item is good for the heart and chuchu and many other thinhgssd" textAlignment="JUSTIFY" wrapText="true" />
-                  <TableView layoutX="421.0" layoutY="48.0" prefHeight="325.0" prefWidth="277.0">
+                  <TableView layoutX="413.0" layoutY="48.0" prefHeight="248.0" prefWidth="285.0">
                     <columns>
-                      <TableColumn prefWidth="115.0" text="Brand" />
-                      <TableColumn prefWidth="87.0" text="Cost" />
-                        <TableColumn prefWidth="74.0" text="Cheaper" />
+                      <TableColumn prefWidth="105.0" text="Brand" />
+                      <TableColumn prefWidth="97.0" text="Cost" />
+                        <TableColumn prefWidth="82.0" text="Cheaper" />
                     </columns>
                   </TableView>
-                  <Label layoutX="421.0" layoutY="14.0" text="Alternative Products:">
+                  <Label layoutX="413.0" layoutY="15.0" text="Products:">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -117,6 +118,7 @@
                         <Font size="17.0" />
                      </font>
                   </Label>
+                  <TextField fx:id="searchTextfield" layoutX="413.0" layoutY="306.0" promptText="Search Item" />
                </children>
             </Pane>
          </center>

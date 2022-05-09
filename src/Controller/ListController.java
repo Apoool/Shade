@@ -36,6 +36,18 @@ public class ListController implements Initializable {
     @FXML
     AnchorPane anchor;
 
+    @FXML
+    TableView<ProductInventory> checklistTableView;
+    @FXML
+    TableColumn<ProductInventory, String> productNameCol;
+    @FXML
+    TableColumn<ProductInventory, String> brandCol;
+    @FXML
+    TableColumn<ProductInventory, Float> costCol;
+    @FXML
+    TableColumn<ProductInventory, String> locationCol;
+
+
 
     private Scene scene;
     private Stage stage;
@@ -83,5 +95,7 @@ public class ListController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        System.out.println();
     }
 }

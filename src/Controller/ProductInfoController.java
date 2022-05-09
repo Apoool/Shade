@@ -3,25 +3,39 @@ package Controller;
 
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
 
+import Core.InventoryList;
+import Core.ProductInventory;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 
-public class ProductInfoController {
+public class ProductInfoController implements Initializable {
     
     @FXML
     Button homeButton, listButton, prodinfoButton, marketmapButton, scanButton, exitButton;
 
     @FXML
     AnchorPane anchor;
+
+    @FXML
+    TextField searchTextField;
+
+    ObservableList<ProductInventory> productInventoryObservableList = FXCollections.observableArrayList();
 
     private Scene scene;
     private Stage stage;
@@ -68,6 +82,12 @@ public class ProductInfoController {
         stage = (Stage) anchor.getScene().getWindow();
         stage.close();
     }
-    
-    
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        productInventoryObservableList = InventoryList.importDB();
+
+
+    }
 }
